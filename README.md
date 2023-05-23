@@ -7,7 +7,7 @@ pip install git+https://github.com/ruauka/rlint-py.git
 ```
 
 ## Usage
-Folders and files can be passed as arguments for verification using a **relative path**. You can specify an unlimited number of folders and files separated by a space.
+Folders and files can be passed as arguments for verification using a **_relative path_**. You can specify an unlimited number of folders and files separated by a space.
 
 Running a whole service check:
 ```bash
@@ -29,18 +29,19 @@ Start checking a specific folder and file.py:
 rlint folder file.py
 ```
 
-Start checking multiple folders and files:
+Start checking multiple folders and py-files:
 ```bash
 rlint folder1 folder2 folder_n file1.py file2.py file_n.py
 ```
 
-Start checking with keys.
+Start checking with **_cli keys_**.
+
 Running a check specifying the path to the configuration file:
 ```bash
 rlint folder file.py --config=path/to/pyproject.toml
 ```
 ## Linter config
-To configure the linter, you need to create a file `pyproject.toml` in the root of the checking application. In this case, the default path is `--config=pyproject.toml` and it is not required to specify it.
+To configure the linter, create a file `pyproject.toml` in the root of the checking application. In this case, the default path is `--config=pyproject.toml` and it is not required to specify it.
 
 List of available configuration options:
 ```toml
@@ -49,13 +50,13 @@ select = ["R0001"] # List of rules
 exclude = ["folder", "file.py", "tests"] # Folders and files excluded from the check
 format = "TEXT" # By default, the report format type is `TEXT`
 ```
-- A folder with a `virtual environment` (`venv` or other names of this folder) is excluded by **default**, you do not need to add the folder name to the `exclude` option list.
+- A folder with a `virtual environment` (`venv` or other names of this folder) is excluded by **_default_**, you do not need to add the folder name to the `exclude` option list.
 - The `select` option is in development.
 - The `format` option is in development.
 
 ## Linter rules
 ## R0001
-- R0001 - the rule looks for `hardcode` in the source code.
+Rule looks for `hardcode` in the source code.
 
 Additional settings in `pyproject.toml`:
 ```toml
