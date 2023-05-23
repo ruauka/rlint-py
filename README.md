@@ -45,8 +45,8 @@ To configure the linter, you need to create a file `pyproject.toml` in the root 
 List of available configuration options:
 ```toml
 [tool.rlint]
-select = ["R0001", ...] # List of rules
-exclude = ["folder", "file.py", "tests", ...] # Folders and files excluded from the check
+select = ["R0001"] # List of rules
+exclude = ["folder", "file.py", "tests"] # Folders and files excluded from the check
 format = "TEXT" # By default, the report format type is `TEXT`
 ```
 - A folder with a `virtual environment` (`venv` or other names of this folder) is excluded by **default**, you do not need to add the folder name to the `exclude` option list.
