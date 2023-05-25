@@ -1,7 +1,7 @@
 import platform
-from typing import Any, Dict
 import toml
 import os
+from typing import Any, Dict
 
 
 # парсинг конфигурации линтера

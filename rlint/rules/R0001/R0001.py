@@ -1,7 +1,8 @@
 import ast
-from rlint.tools.dirs_files import *
-from rlint.tools.utils import *
 from typing import Any, Dict
+
+from rlint.tools.dirs_files import py_file_open
+from rlint.tools.utils import get_threshold_R0001
 
 
 # класс поиска констант

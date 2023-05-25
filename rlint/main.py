@@ -1,6 +1,8 @@
-from rlint.rules.R0001.R0001 import *
-from rlint.tools.utils import *
 import click
+
+from rlint.rules.R0001.R0001 import R0001
+from rlint.tools.utils import get_config
+from rlint.tools.dirs_files import get_py_files
 
 
 # запуск скрипта проверки
