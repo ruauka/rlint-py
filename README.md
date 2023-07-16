@@ -1,7 +1,16 @@
-## Project description
+## Rlint
+
+## Overview
 Custom Python linter.
 
-## Install
+## Content
+- [Installation](#installation)
+- [Usage](#usage)
+- [Config](#config)
+- [Rules](#rules)
+    - [R0001](#r0001)
+
+## Installation
 ```bash
 pip install git+https://github.com/ruauka/rlint-py.git
 ```
@@ -40,7 +49,7 @@ Running a check specifying the path to the configuration file:
 ```bash
 rlint folder file.py --config=path/to/pyproject.toml
 ```
-## Linter config
+## Config
 To configure the linter, create a file `pyproject.toml` in the root of the checking application. In this case, the default path is `--config=pyproject.toml` and it is not required to specify it.
 
 List of available configuration options:
@@ -54,7 +63,8 @@ format = "TEXT" # By default, the report format type is `TEXT`
 - The `select` option is in development.
 - The `format` option is in development.
 
-## Linter rules
+## Rules
+
 ## R0001
 Rule looks for `hardcode` in the source code.
 
